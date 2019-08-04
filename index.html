@@ -30,77 +30,105 @@
             padding: 0;
         }
 
+        @media (min-width: 769px) {
+            div.heading {
+                height: 100px;
+            }
+        }
+
         div.heading {
             text-align: center;
-            height: 100px;
-            width: 100%;
             padding: 5px;
         }
 
-        div.heading>h1 {
+        div.heading>span {
             text-shadow: 1px 1px 2px gray;
             font-variant: small-caps;
+            font-weight: 500;
+            font-size: 42px;
         }
 
         div.heading>hr {
             border-color: darkred;
-            width: 50%;
+            width: 70%;
+        }
+
+        @media (max-width: 768px) {
+
+            /* For mobile phones: */
+            div.body {
+                position: absolute;
+                bottom: 0;
+                top: 136px;
+            }
+        }
+
+        @media (min-width: 769px) {
+
+            /* For mobile phones: */
+            div.body {
+                position: absolute;
+                bottom: 0;
+                top: 100px;
+            }
         }
 
         div.body {
             background-size: auto, 100%, 100%;
             background-image: url("css/images/overlay.png"), url("css/images/bg5.png");
             background-attachment: fixed;
-            background-repeat: repeat;
-            position: absolute;
-            top: 100px;
-            bottom: 0;
-            width: 100%;
+            background-repeat: repeat-y;
             padding-top: 50px;
+            width: 100%;
+            height: 100%;
         }
 
         div.card {
-            /* display: flex;
-            justify-content: center;
-            align-items: center;
-            border-color: white;
-            border-bottom: 2px whitesmoke;
-            border-left: 2px whitesmoke;
-            background: white;
-            width: 50%; */
-
-            margin: 0 auto;
-            width: 40em;
-            height: 400px;
+            margin-bottom: 10%;
+            max-width: 60%;
+            min-height: 50%;
             background: #ffffff;
             box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
             position: relative;
             padding: 5px;
             color: black;
             border-radius: 1em;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        div.card>div {
+        div.card {
             display: grid;
             grid-template-areas:
-                "text text text text text"
-                "icon1 icon2 icon3 icon4 icon5"
-                "icon6 icon7 icon8 icon9 icon10";
-            height: 100%;
-            width: 100%;
-        }
-
-        div.card>div>* {
+                "text"
+                "icon"
+                "icon";
             text-align: center;
-            margin: auto;
             transition: text-shadow .2s;
         }
 
-        div.card > div > div:hover {
+        .icon-container {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .icon {
+            flex: calc(20% - 30px);
+            margin: 15px
+        }
+
+        .icon:hover {
             text-shadow: gray 1px 1px 4px, gray -1px -1px 4px;
         }
 
         a {
+            color: inherit;
+        }
+
+        a:hover {
             color: inherit;
         }
     </style>
@@ -108,59 +136,59 @@
 
 <body>
     <div class="heading">
-        <h1>Site Under Renovation</h1>
+        <span>Site Under Renovation</span>
         <hr />
     </div>
     <div class="body">
         <div class="card">
-            <div>
-                <h2 style="grid-area: text;">Find me somewhere else</h2>
-                <div style="grid-area: icon1;">
+            <h2 style="grid-area: text;">Find me somewhere else</h2>
+            <div class="icon-container">
+                <div class="icon">
                     <a href="https://twitter.com/@zikhan3" title="Twitter">
                         <i class="fab fa-twitter-square fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon2;" title="Facebook">
+                <div class="icon" title="Facebook">
                     <a href="https://facebook.com/zovink">
                         <i class="fab fa-facebook-square fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon3;">
+                <div class="icon">
                     <a href="http://stackoverflow.com/users/3955358">
                         <i class="fab fa-stack-overflow fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon4;">
+                <div class="icon">
                     <a href="http://live.xbox.com/Profile?GamerTag=zkhan3">
                         <i class="fab fa-xbox fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon5;">
+                <div class="icon">
                     <a href="skype:zovinkhanmohd?userinfo">
                         <i class="fab fa-skype fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon6;">
+                <div class="icon">
                     <a href="https://github.com/zikhan">
                         <i class="fab fa-github-square fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon7;">
+                <div class="icon">
                     <a href="https://blog.zovink.com">
                         <i class="fab fa-wordpress fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon8;">
+                <div class="icon">
                     <a href="https://www.linkedin.com/in/zovin">
                         <i class="fab fa-linkedin fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon9;">
+                <div class="icon">
                     <a href="https://news.ycombinator.com/user?id=zovin">
                         <i class="fab fa-y-combinator fa-5x"></i>
                     </a>
                 </div>
-                <div style="grid-area: icon10;">
+                <div class="icon">
                     <a href="https://venmo.com/zovin">
                         <i class="fab fa-vimeo-square fa-5x"></i>
                     </a>
