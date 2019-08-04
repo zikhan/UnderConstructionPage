@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no,width=1080" />
+    <meta name="viewport" content="initial-scale=1" />
+    <title>Zovin Khanmohammed</title>
+    <link href="images/zikLogo.png" rel="icon" type="image/png" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="images/zikLogo.png" rel="apple-touch-icon-precomposed">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link href="images/zikLogo192.png" rel="shortcut icon" sizes="192x192">
+    <link href="images/zikLogo128.png" rel="shortcut icon" sizes="128x128">
+    <meta name="description" content="Personal Webpage of Zovin Khanmohammed.">
+    <meta name="keywords" content="Zovin Khanmohammed">
+    <meta name="keywords" content="Zovin">
+    <meta name="keywords" content="Khanmohammed">
+    <script src="//www.google-analytics.com/analytics.js" async=""></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/822b66c652.js"></script>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            vertical-align: baseline;
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        div.heading {
+            text-align: center;
+            height: 100px;
+            width: 100%;
+            padding: 5px;
+        }
+
+        div.heading>h1 {
+            text-shadow: 1px 1px 2px gray;
+            font-variant: small-caps;
+        }
+
+        div.heading>hr {
+            border-color: darkred;
+            width: 50%;
+        }
+
+        div.body {
+            background-size: auto, 100%, 100%;
+            background-image: url("css/images/overlay.png"), url("css/images/bg5.png");
+            background-attachment: fixed;
+            background-repeat: repeat;
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        div.card {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color: white;
+            border-bottom: 2px whitesmoke;
+            border-left: 2px whitesmoke;
+            background: white;
+            width: 50%; */
+
+            margin: 0 auto;
+            width: 40em;
+            height: 400px;
+            background: #ffffff;
+            box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+            position: relative;
+            padding: 5px;
+            color: black;
+            border-radius: 1em;
+        }
+
+        div.card>div {
+            display: grid;
+            grid-template-areas:
+                "text text text text text"
+                "icon1 icon2 icon3 icon4 icon5"
+                "icon6 icon7 icon8 icon9 icon10";
+            height: 100%;
+            width: 100%;
+        }
+
+        div.card>div>* {
+            text-align: center;
+            margin: auto;
+            transition: text-shadow .2s;
+        }
+
+        div.card > div > div:hover {
+            text-shadow: gray 1px 1px 4px, gray -1px -1px 4px;
+        }
+
+        a {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Site Under Renovation</h1>
+        <hr />
+    </div>
+    <div class="body">
+        <div class="card">
+            <div>
+                <h2 style="grid-area: text;">Find me somewhere else</h2>
+                <div style="grid-area: icon1;">
+                    <a href="https://twitter.com/@zikhan3" title="Twitter">
+                        <i class="fab fa-twitter-square fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon2;" title="Facebook">
+                    <a href="https://facebook.com/zovink">
+                        <i class="fab fa-facebook-square fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon3;">
+                    <a href="http://stackoverflow.com/users/3955358">
+                        <i class="fab fa-stack-overflow fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon4;">
+                    <a href="http://live.xbox.com/Profile?GamerTag=zkhan3">
+                        <i class="fab fa-xbox fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon5;">
+                    <a href="skype:zovinkhanmohd?userinfo">
+                        <i class="fab fa-skype fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon6;">
+                    <a href="https://github.com/zikhan">
+                        <i class="fab fa-github-square fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon7;">
+                    <a href="https://blog.zovink.com">
+                        <i class="fab fa-wordpress fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon8;">
+                    <a href="https://www.linkedin.com/in/zovin">
+                        <i class="fab fa-linkedin fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon9;">
+                    <a href="https://news.ycombinator.com/user?id=zovin">
+                        <i class="fab fa-y-combinator fa-5x"></i>
+                    </a>
+                </div>
+                <div style="grid-area: icon10;">
+                    <a href="https://venmo.com/zovin">
+                        <i class="fab fa-vimeo-square fa-5x"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
